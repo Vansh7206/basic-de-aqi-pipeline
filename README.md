@@ -1,4 +1,4 @@
-# India AQI Pipeline
+# Basic DE AQI Pipeline
 
 A basic data engineering project that collects air quality data for **Mumbai, Delhi and Bengaluru** every hour, stores it raw in PostgreSQL, cleans it with SQL, and shows it on a Streamlit dashboard.
 
@@ -66,7 +66,7 @@ If one city fails, the other cities are still saved and loaded, and the log reco
 ## Project structure
 
 ```
-india-aqi-pipeline/
+basic-de-aqi-pipeline/
 ├── scripts/
 │   ├── config.py          # cities, paths, database settings
 │   ├── fetch_aqi.py       # get data from the API, save raw CSVs
@@ -87,8 +87,8 @@ india-aqi-pipeline/
 Requirements: Python 3.10+ and PostgreSQL.
 
 ```
-git clone https://github.com/Vansh7206/india-aqi-pipeline.git
-cd india-aqi-pipeline
+git clone https://github.com/Vansh7206/basic-de-aqi-pipeline.git
+cd basic-de-aqi-pipeline
 pip install requests psycopg2-binary python-dotenv streamlit pandas sqlalchemy
 ```
 
